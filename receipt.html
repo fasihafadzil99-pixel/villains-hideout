@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Villain's Hideout | Payment Summary</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Villain's Hideout Logo">
+            <span>
+                VILLAIN'S <strong>HIDEOUT</strong>
+            </span>
+
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="founder.html">Founder</a>
+            <a href="kiosk.html">Subscription</a>
+        </nav>
+
+    </header>
+
+    <!-- Receipt -->
+    <main class="inner-page">
+
+        <section class="section-heading">
+            <p class="eyebrow">YOUR SUBSCRIPTION DETAILS</p>
+            <h1>PAYMENT SUMMARY</h1>
+            <p>Please review your rental details and total payment.</p>
+        </section>
+
+        <section class="form-panel" id="receiptDetails">
+
+            <h2>SUBSCRIPTION RECEIPT</h2>
+
+            <div id="receiptContent"></div>
+
+            <div class="result">
+                <h2>TOTAL AMOUNT TO PAY</h2>
+                <h1 id="finalPrice">RM 0.00</h1>
+                <p>Please proceed with the payment.</p>
+            </div>
+
+            <button class="button"
+                    onclick="window.print()">
+                Print Receipt
+            </button>
+
+            <a href="kiosk.html" class="button">
+                Back to Subscription
+            </a>
+
+        </section>
+
+    </main>
+
+      <footer class="site-footer">
+
+        <p>
+            &copy; 2026 VILLAIN'S HIDEOUT.
+            ALL RIGHTS RESERVED.
+        </p>
+
+    </footer>
+</body>
+</html>

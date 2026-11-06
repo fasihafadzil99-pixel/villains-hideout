@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villain's Hideout | Subscription</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Villain's Hideout Logo">
+           <span>
+                VILLAIN'S <strong>HIDEOUT</strong>
+            </span>
+
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="founder.html">Founder</a>
+            <a href="kiosk.html" class="active">Subscription</a>
+        </nav>
+
+    </header>
+
+    <!-- Main Content -->
+    <main class="inner-page">
+
+        <section class="section-heading">
+            <p class="eyebrow">CHOOSE YOUR SECRET HEADQUARTERS</p>
+            <h1>SUBSCRIPTION FORM</h1>
+            <p>Complete your details to rent your preferred secret headquarters.</p>
+        </section>
+
+        <div class="subscription-layout">
+
+            <!-- Package Selection -->
+            <section class="package-selection">
+
+                <h2>AVAILABLE PACKAGES</h2>
+
+                <div class="selection-card">
+                    <img src="images/basic_lair.jpg" alt="Basic Lair">
+                    <h3>Basic Lair</h3>
+                    <p>RM 500 / month</p>
+
+                    <label>
+                        <input type="radio" name="packageChoice" value="basic">
+                        Select Basic Lair
+                    </label>
+                </div>
+
+                <div class="selection-card">
+                    <img src="images/advanced_lair.jpg" alt="Advanced Lair">
+                    <h3>Advanced Lair</h3>
+                    <p>RM 1,000 / month</p>
+
+                    <label>
+                        <input type="radio" name="packageChoice" value="advanced">
+                        Select Advanced Lair
+                    </label>
+                </div>
+
+                <div class="selection-card">
+                    <img src="images/ultimate_lair.jpg" alt="Ultimate Lair">
+                    <h3>Ultimate Lair</h3>
+                    <p>RM 1,800 / month</p>
+
+                    <label>
+                        <input type="radio" name="packageChoice" value="ultimate">
+                        Select Ultimate Lair
+                    </label>
+                </div>
+
+<small id="packageError" class="error-message"></small>
+
+                <!-- Discount Information -->
+                <div class="discount-panel">
+                    <h3>RENTAL DISCOUNT</h3>
+                    <p>1 – 5 months: 0% discount</p>
+                    <p>6 – 11 months: 10% discount</p>
+                    <p>12 – 60 months: 20% discount</p>
+                </div>
+
+            </section>
+
+            <!-- Customer Form -->
+            <section class="form-panel">
+
+                <h2>CUSTOMER DETAILS</h2>
+
+                <form id="subscriptionForm" novalidate>
+
+                 <div class="form-group">
+    <label for="name">Customer Name</label>
+
+    <input type="text"
+           id="name"
+           name="name"
+           placeholder="Enter your full name">
+
+    <small id="nameError" class="error-message"></small>
+</div>
+
+                  <div class="form-group">
+    <label for="email">Email Address</label>
+
+    <input type="email"
+           id="email"
+           name="email"
+           placeholder="example@email.com">
+
+    <small id="emailError" class="error-message"></small>
+</div>
+<div class="form-group">
+    <label for="phone">Phone Number</label>
+
+    <input type="tel"
+           id="phone"
+           name="phone"
+           placeholder="Example: 0123456789">
+
+    <small id="phoneError" class="error-message"></small>
+</div>
+
+                    <div class="form-group">
+    <label for="months">Rental Duration (Months)</label>
+
+    <input type="number"
+           id="months"
+           name="months"
+           min="1"
+           max="60"
+           step="1"
+           placeholder="Enter 1 to 60 months">
+
+    <small id="monthsError" class="error-message"></small>
+</div>
+                   <div class="form-group">
+                        <label for="terms" class="terms-label">
+                            <input type="checkbox" id="terms" name="terms">
+                            <span>I agree to the Terms and Conditions.</span>
+                        </label>
+                    </div>
+
+                    <small id="termsError" class="error-message"></small>
+
+                    <button type="submit" class="button">
+                        Calculate Subscription
+                    </button>
+
+                </form>
+
+            </section>
+
+        </div>
+
+    </main>
+
+      <footer class="site-footer">
+
+        <p>
+            &copy; 2026 VILLAIN'S HIDEOUT.
+            ALL RIGHTS RESERVED.
+        </p>
+
+    </footer>
+</body>
+</html>
